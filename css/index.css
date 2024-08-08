@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* === STYLE CONTAINER === */
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* === STYLE HEADER === */
+
+header, footer {
+    background-color: #192a59;
+    color: white;
+    padding-top: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+}
+
+nav li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 16px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    cursor: pointer;
+    width: 32px;
+}
+
+.menu-hamburguer span {
+    background-color: white;
+    display: block;
+    height: 2px;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+/* === SECTION SOBRE A LOJA === */
+
+.conatiner-flex {
+    display: flex;
+}
+
+#section-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* === SECTION EM DESTAQUE --- EM PROMOÇÕES === */
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    margin-bottom: 24px;
+    max-width: 30%;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-veiculos li button,
+form button {
+    background-color: #119759;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 8px;
+    width: 100%;
+}
+
+.price {
+    display: block;
+    margin: 16px 0;
+}
+
+.price del {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+/* === SECTION FORMULARIO === */
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-campo input, .form-campo textarea {
+    display: block;
+    padding: 8px;
+    width: 100%;
+}
+
+.form-campo textarea {
+    height: 120px;
+    resize: none;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+/* === FOOTER === */
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+footer .container {
+    align-items: center;
+    justify-content: space-between;
+}
